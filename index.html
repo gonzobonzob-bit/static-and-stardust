@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a0a12">
-<title>Static &amp; Stardust — Vintage Tees, Pop Culture &amp; Meme Merch</title>
-<meta name="description" content="Static &amp; Stardust makes vintage-style band tees, pop culture &amp; fandom apparel, and meme merch for people who remember channel-surfing past midnight. Shop the drop.">
+<title data-i18n="meta.title">Static &amp; Stardust — Vintage Tees, Pop Culture &amp; Meme Merch</title>
+<meta name="description" data-i18n-content="meta.desc" content="Static &amp; Stardust makes vintage-style band tees, pop culture &amp; fandom apparel, and meme merch for people who remember channel-surfing past midnight. Shop the drop.">
 <style>
   :root{
     --bg:#0a0a12;
@@ -80,6 +80,19 @@
   .btn-ghost{border-color:var(--line-strong);color:var(--ink)}
   .btn-ghost:hover{border-color:var(--pink);background:rgba(255,95,176,.06)}
   .nav .btn{padding:9px 18px;font-size:13px}
+  .nav-right{display:flex;align-items:center;gap:12px}
+  .lang-toggle{
+    font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.08em;
+    color:var(--muted);background:transparent;border:1px solid var(--line-strong);
+    border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .15s,border-color .15s;
+  }
+  .lang-toggle:hover{color:var(--ink);border-color:var(--pink)}
+  @media (max-width:560px){
+    .nav-inner{padding:14px 16px}
+    .nav-links{display:none}
+    .nav-right{gap:8px}
+    .nav .btn{padding:8px 14px}
+  }
 
   /* ---- hero ---- */
   .hero{position:relative;padding:88px 0 72px;text-align:center}
@@ -214,107 +227,110 @@
   <div class="nav-inner">
     <a class="wordmark" href="#top">Static<span class="amp">&amp;</span>Stardust</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener">Shop Now</a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Español" lang="es">ES</button>
+      <a class="btn btn-primary" href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener" data-i18n="nav.cta">Shop Now</a>
+    </div>
   </div>
 </nav>
 
 <main id="top">
 
   <section class="hero container">
-    <div class="eyebrow"><span class="dot"></span>Broadcasting from between the channels</div>
-    <h1>Nostalgia,<br><span class="grad">tuned to static.</span></h1>
-    <p class="lede">
+    <div class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Broadcasting from between the channels</span></div>
+    <h1 data-i18n="hero.title">Nostalgia,<br><span class="grad">tuned to static.</span></h1>
+    <p class="lede" data-i18n="hero.lede">
       Vintage-style band tees, pop-culture &amp; fandom apparel, and meme merch for
       people who remember channel-surfing past midnight — where the picture gets
       fuzzy and the good stuff starts.
     </p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener">Shop the Drop &nbsp;→</a>
-      <a class="btn btn-ghost" href="#about">Our Story</a>
+      <a class="btn btn-primary" href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener" data-i18n="hero.shop">Shop the Drop &nbsp;→</a>
+      <a class="btn btn-ghost" href="#about" data-i18n="hero.story">Our Story</a>
     </div>
     <div class="surf-strip">
-      <span>CH. 03 — VINTAGE BAND TEES</span>
-      <span>CH. 07 — POP CULTURE &amp; FANDOM</span>
-      <span>CH. 13 — MEME &amp; HUMOR</span>
+      <span data-i18n="surf.1">CH. 03 — VINTAGE BAND TEES</span>
+      <span data-i18n="surf.2">CH. 07 — POP CULTURE &amp; FANDOM</span>
+      <span data-i18n="surf.3">CH. 13 — MEME &amp; HUMOR</span>
     </div>
   </section>
 
   <section id="about" class="container">
     <div class="about-grid">
       <div class="about-copy">
-        <div class="section-tag">The signal</div>
-        <h2 style="font-family:var(--display);font-size:clamp(24px,4vw,32px);margin-bottom:18px;line-height:1.2">
+        <div class="section-tag" data-i18n="about.tag">The signal</div>
+        <h2 style="font-family:var(--display);font-size:clamp(24px,4vw,32px);margin-bottom:18px;line-height:1.2" data-i18n="about.title">
           Two things that never really left us.
         </h2>
-        <p>
+        <p data-i18n="about.p1">
           <strong>Static &amp; Stardust</strong> lives at the point where an old TV loses
           its signal and the sky shows through anyway — the fuzz of a rerun you've seen
           a hundred times, and the wide-open wonder of looking up at 2am.
         </p>
-        <p>
+        <p data-i18n="about.p2">
           We design apparel for people who quote the movie, remember the band, and
           still laugh at the meme a week later. No fast-fashion drops, no chasing
           trends we don't actually like — just graphics we'd wear ourselves, printed
           well and built to last past one wash.
         </p>
-        <p>
+        <p data-i18n="about.p3">
           Every design starts as a small batch. If it resonates, it stays; if it
           doesn't, we move on. That's the whole strategy.
         </p>
-        <p>
+        <p data-i18n="about.p4">
           We're a family collective at heart — a small circle of creators and
           suppliers who work together like family, not a faceless factory line.
         </p>
       </div>
       <div class="tv-card">
-        <div class="tv-glyph">no signal</div>
+        <div class="tv-glyph" data-i18n="about.tv">no signal</div>
       </div>
     </div>
   </section>
 
   <section id="shop" class="container">
     <div class="section-head">
-      <div class="section-tag">On the rack</div>
-      <h2>Pick your channel</h2>
-      <p>Five ways into the collection — browse the full catalog on the shop.</p>
+      <div class="section-tag" data-i18n="shop.tag">On the rack</div>
+      <h2 data-i18n="shop.title">Pick your channel</h2>
+      <p data-i18n="shop.lede">Five ways into the collection — browse the full catalog on the shop.</p>
     </div>
     <div class="cat-grid">
       <a class="cat-card" href="https://staticandstardust.myshopify.com/collections/bookmarks" target="_blank" rel="noopener">
         <span class="glow"></span>
-        <div class="cat-name">Bookmarks <span class="arrow">→</span></div>
-        <div class="cat-desc">Small format, same graphics — hold your page with the same taste as your tee.</div>
+        <div class="cat-name"><span data-i18n="cat.bookmarks">Bookmarks</span> <span class="arrow">→</span></div>
+        <div class="cat-desc" data-i18n="cat.bookmarks.desc">Small format, same graphics — hold your page with the same taste as your tee.</div>
       </a>
       <a class="cat-card" href="https://staticandstardust.myshopify.com/collections/vintage-band-tees" target="_blank" rel="noopener">
         <span class="glow"></span>
-        <div class="cat-name">Vintage Band Tees <span class="arrow">→</span></div>
-        <div class="cat-desc">Worn-in graphics for tours that never happened, for bands you wish existed.</div>
+        <div class="cat-name"><span data-i18n="cat.band">Vintage Band Tees</span> <span class="arrow">→</span></div>
+        <div class="cat-desc" data-i18n="cat.band.desc">Worn-in graphics for tours that never happened, for bands you wish existed.</div>
       </a>
       <a class="cat-card" href="https://staticandstardust.myshopify.com/collections/pop-culture-amp-fandom" target="_blank" rel="noopener">
         <span class="glow"></span>
-        <div class="cat-name">Pop Culture &amp; Fandom <span class="arrow">→</span></div>
-        <div class="cat-desc">For the shows, films, and franchises you'll defend at any volume.</div>
+        <div class="cat-name"><span data-i18n="cat.pop">Pop Culture &amp; Fandom</span> <span class="arrow">→</span></div>
+        <div class="cat-desc" data-i18n="cat.pop.desc">For the shows, films, and franchises you'll defend at any volume.</div>
       </a>
       <a class="cat-card" href="https://staticandstardust.myshopify.com/collections/meme-amp-humor" target="_blank" rel="noopener">
         <span class="glow"></span>
-        <div class="cat-name">Meme &amp; Humor <span class="arrow">→</span></div>
-        <div class="cat-desc">Wearable inside jokes. If you know, you know.</div>
+        <div class="cat-name"><span data-i18n="cat.meme">Meme &amp; Humor</span> <span class="arrow">→</span></div>
+        <div class="cat-desc" data-i18n="cat.meme.desc">Wearable inside jokes. If you know, you know.</div>
       </a>
       <a class="cat-card" href="https://staticandstardust.myshopify.com/collections/new-arrivals" target="_blank" rel="noopener">
         <span class="glow"></span>
-        <div class="cat-name">New Arrivals <span class="arrow">→</span></div>
-        <div class="cat-desc">Fresh off the press — the latest designs before they sell out.</div>
+        <div class="cat-name"><span data-i18n="cat.new">New Arrivals</span> <span class="arrow">→</span></div>
+        <div class="cat-desc" data-i18n="cat.new.desc">Fresh off the press — the latest designs before they sell out.</div>
       </a>
     </div>
   </section>
 
   <section class="container">
     <div class="cta-band">
-      <h2>Ready to change the channel?</h2>
-      <p>The full catalog lives on our shop — new drops posted there first.</p>
-      <a class="btn btn-primary" href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener">Visit the Shop &nbsp;→</a>
+      <h2 data-i18n="cta.title">Ready to change the channel?</h2>
+      <p data-i18n="cta.lede">The full catalog lives on our shop — new drops posted there first.</p>
+      <a class="btn btn-primary" href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener" data-i18n="cta.btn">Visit the Shop &nbsp;→</a>
     </div>
   </section>
 
@@ -324,15 +340,109 @@
   <div class="footer-inner">
     <div class="footer-brand">Static<span class="amp">&amp;</span>Stardust</div>
     <ul class="footer-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener">Shop</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="https://staticandstardust.myshopify.com" target="_blank" rel="noopener" data-i18n="nav.shop">Shop</a></li>
     </ul>
   </div>
-  <div class="footer-note">A family collective of creators &amp; suppliers.<br>&copy; <span id="year"></span> Static &amp; Stardust. All rights reserved.</div>
+  <div class="footer-note"><span data-i18n="footer.note">A family collective of creators &amp; suppliers.</span><br>&copy; <span id="year"></span> Static &amp; Stardust. <span data-i18n="footer.rights">All rights reserved.</span></div>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- i18n: English lives in the markup; Spanish swaps in from here ---- */
+  (function(){
+    var ES = {
+      'meta.title': 'Static &amp; Stardust — Camisetas vintage, cultura pop y merch de memes',
+      'meta.desc': 'Static & Stardust crea camisetas de bandas estilo vintage, ropa de cultura pop y fandom, y merch de memes para quienes recuerdan hacer zapping pasada la medianoche. Descubre la colección.',
+      'nav.about': 'Nosotros',
+      'nav.shop': 'Tienda',
+      'nav.cta': 'Comprar',
+      'hero.eyebrow': 'Transmitiendo desde entre los canales',
+      'hero.title': 'Nostalgia,<br><span class="grad">sintonizada en estática.</span>',
+      'hero.lede': 'Camisetas de bandas estilo vintage, ropa de cultura pop y fandom, y merch de memes para quienes recuerdan hacer zapping pasada la medianoche — cuando la imagen se pone borrosa y empieza lo bueno.',
+      'hero.shop': 'Ver la colección &nbsp;→',
+      'hero.story': 'Nuestra historia',
+      'surf.1': 'CAN. 03 — CAMISETAS DE BANDAS VINTAGE',
+      'surf.2': 'CAN. 07 — CULTURA POP Y FANDOM',
+      'surf.3': 'CAN. 13 — MEMES Y HUMOR',
+      'about.tag': 'La señal',
+      'about.title': 'Dos cosas que nunca se fueron del todo.',
+      'about.p1': '<strong>Static &amp; Stardust</strong> vive en el punto donde una tele vieja pierde la señal y el cielo se asoma de todos modos — la estática de una repetición que has visto cien veces, y el asombro inmenso de mirar hacia arriba a las 2 de la mañana.',
+      'about.p2': 'Diseñamos ropa para quienes citan la película, recuerdan la banda y todavía se ríen del meme una semana después. Nada de moda rápida, nada de perseguir tendencias que en realidad no nos gustan — solo gráficos que nosotros mismos usaríamos, bien impresos y hechos para durar más de una lavada.',
+      'about.p3': 'Cada diseño empieza como un lote pequeño. Si conecta, se queda; si no, seguimos adelante. Esa es toda la estrategia.',
+      'about.p4': 'En el fondo somos un colectivo familiar — un pequeño círculo de creadores y proveedores que trabajan juntos como familia, no una línea de fábrica sin rostro.',
+      'about.tv': 'sin señal',
+      'shop.tag': 'En el perchero',
+      'shop.title': 'Elige tu canal',
+      'shop.lede': 'Cinco formas de entrar a la colección — explora el catálogo completo en la tienda.',
+      'cat.bookmarks': 'Separadores',
+      'cat.bookmarks.desc': 'Formato pequeño, mismos gráficos — marca tu página con el mismo estilo que tu camiseta.',
+      'cat.band': 'Camisetas de bandas vintage',
+      'cat.band.desc': 'Gráficos desgastados de giras que nunca ocurrieron, de bandas que ojalá existieran.',
+      'cat.pop': 'Cultura pop y fandom',
+      'cat.pop.desc': 'Para las series, películas y franquicias que defenderías a todo volumen.',
+      'cat.meme': 'Memes y humor',
+      'cat.meme.desc': 'Chistes internos para vestir. Si lo sabes, lo sabes.',
+      'cat.new': 'Novedades',
+      'cat.new.desc': 'Recién salidos de la prensa — los diseños más nuevos antes de que se agoten.',
+      'cta.title': '¿Todo listo para cambiar de canal?',
+      'cta.lede': 'El catálogo completo está en nuestra tienda — los nuevos lanzamientos se publican ahí primero.',
+      'cta.btn': 'Visitar la tienda &nbsp;→',
+      'footer.note': 'Un colectivo familiar de creadores y proveedores.',
+      'footer.rights': 'Todos los derechos reservados.'
+    };
+
+    var KEY = 'sas-lang';
+    var nodes = document.querySelectorAll('[data-i18n]');
+    var metaDesc = document.querySelector('[data-i18n-content]');
+    var toggle = document.getElementById('langToggle');
+
+    // Snapshot the English markup so switching back needs no second dictionary.
+    var EN = {};
+    nodes.forEach(function(el){ EN[el.getAttribute('data-i18n')] = el.innerHTML; });
+    EN['meta.desc'] = metaDesc.getAttribute('content');
+
+    function browserLang(){
+      var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+      for (var i = 0; i < list.length; i++){
+        var code = String(list[i]).toLowerCase().slice(0, 2);
+        if (code === 'es' || code === 'en') return code;
+      }
+      return 'en';
+    }
+    function savedLang(){
+      try { var v = localStorage.getItem(KEY); return v === 'es' || v === 'en' ? v : null; } catch (e) { return null; }
+    }
+
+    function apply(lang){
+      var dict = lang === 'es' ? ES : EN;
+      nodes.forEach(function(el){
+        var k = el.getAttribute('data-i18n');
+        if (dict[k] != null) el.innerHTML = dict[k];
+      });
+      metaDesc.setAttribute('content', dict['meta.desc']);
+      document.documentElement.lang = lang;
+      var other = lang === 'es' ? 'en' : 'es';
+      toggle.textContent = other.toUpperCase();
+      toggle.setAttribute('lang', other);
+      toggle.setAttribute('aria-label', other === 'es' ? 'Español' : 'English');
+    }
+
+    var current = savedLang() || browserLang();
+    apply(current);
+
+    toggle.addEventListener('click', function(){
+      current = current === 'es' ? 'en' : 'es';
+      try { localStorage.setItem(KEY, current); } catch (e) {}
+      apply(current);
+    });
+
+    // Follow browser language changes live, unless the visitor picked one manually.
+    window.addEventListener('languagechange', function(){
+      if (!savedLang()){ current = browserLang(); apply(current); }
+    });
+  })();
 </script>
 </body>
 </html>
