@@ -1,7 +1,7 @@
 /* Shared site chrome: announcement bar, nav, floating Shop button, footer.
    Edit here once and every page updates. Pages give <body data-page="home|shop|about|info|contact">. */
 (function(){
-  var ETSY='https://www.etsy.com/shop/StaticandStardust', SHOPIFY='https://staticandstardust.myshopify.com';
+  var ETSY='https://staticandstardust.etsy.com', SHOPIFY='https://staticandstardust.myshopify.com';
   var page=document.body.getAttribute('data-page')||'';
   function cur(p){return p===page?' aria-current="page" class="on"':'';}
   var top=
