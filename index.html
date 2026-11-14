@@ -3,59 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-i18n="meta.title">Static &amp; Stardust — Coming Soon</title>
-<meta name="description" data-i18n-content="meta.desc" content="Static &amp; Stardust — nostalgia, tuned to static. Bookmarks, coasters and charm necklaces. Our new home is coming soon.">
-<meta name="theme-color" content="#0a0a12">
+<title data-i18n="meta.title">Static &amp; Stardust — Welcome!</title>
+<meta name="description" data-i18n-content="meta.desc" content="Welcome to Static &amp; Stardust — handmade bookmarks, coasters and charm necklaces with a nostalgic, starry glow. Made in El Paso, TX.">
+<meta name="theme-color" content="#fffaf2">
 <link rel="icon" type="image/png" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta property="og:title" content="Static & Stardust — Coming Soon">
+<meta property="og:title" content="Static &amp; Stardust — Welcome!">
+<meta property="og:description" content="Bookmarks, coasters and charm necklaces with a nostalgic, starry glow.">
 <meta property="og:image" content="https://staticandstardust.com/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
-<style>
-  .cs{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 20px 32px;position:relative;z-index:1}
-  .cs .badge{width:min(320px,70vw);height:auto;filter:drop-shadow(0 0 40px rgba(139,107,255,.35))}
-  .cs h1{color:var(--ink);font-family:var(--display);font-size:clamp(34px,7vw,60px);line-height:1.1;margin:18px 0 8px}
-  .cs .tag{color:var(--muted);font-size:clamp(15px,2.4vw,18px);max-width:520px;margin:0 auto 22px}
-  .pill{display:inline-block;padding:8px 20px;border-radius:999px;border:1px solid var(--line-strong);background:var(--surface);letter-spacing:.2em;text-transform:uppercase;font-size:13px;color:var(--amber)}
-  .photos{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:36px 0 12px}
-  .photos img{width:min(260px,42vw);aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-card);border:1px solid var(--line)}
-  .find{margin-top:20px;color:var(--faint);font-size:14px}
-  .find a{color:var(--cyan);text-decoration:none;margin:0 6px}
-  .find a:hover{text-decoration:underline}
-  .lang-fixed{position:fixed;top:16px;right:16px;z-index:5}
-  .copy{margin-top:36px;color:var(--faint);font-size:12px}
-</style>
+<link rel="stylesheet" href="welcome.css">
 </head>
 <body>
-<div class="sky"></div>
-<svg class="stars" aria-hidden="true"><defs><pattern id="s" width="140" height="140" patternUnits="userSpaceOnUse"><circle cx="12" cy="20" r="1" fill="#fff" opacity=".6"/><circle cx="80" cy="60" r="1.2" fill="#8b6bff" opacity=".7"/><circle cx="120" cy="110" r="1" fill="#4fd9e8" opacity=".6"/><circle cx="40" cy="100" r=".8" fill="#fff" opacity=".5"/></pattern></defs><rect width="100%" height="100%" fill="url(#s)"/></svg>
-<div class="static-veil"></div>
-<button class="lang-toggle lang-fixed" id="langToggle" type="button" aria-label="Español" lang="es">ES</button>
+<div class="blobs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
-<main class="cs" id="top">
-  <img class="badge" src="assets/logo-badge.png" alt="Static &amp; Stardust radio-tower sunset badge">
-  <h1>Static<span class="amp" style="color:var(--pink)"> &amp; </span>Stardust</h1>
-  <p class="tag" data-i18n="tag">Nostalgia, tuned to static.</p>
-  <span class="pill" data-i18n="soon">Coming soon</span>
-  <div class="photos">
-    <img src="assets/bookmarks-space-dino.jpg" alt="Space and dinosaur laminated bookmarks with tassels" loading="lazy">
-    <img src="assets/bookmarks-polar-bear.jpg" alt="Polar bear laminated bookmarks with tassels" loading="lazy">
-  </div>
-  <p class="find"><span data-i18n="find">Find us on</span>
-    <a href="https://www.etsy.com/shop/StaticandStardust" rel="noopener">Etsy</a>·
-    <a href="https://staticandstardust.myshopify.com" rel="noopener">Shopify</a>
-  </p>
-  <p class="copy">© <span id="year">2026</span> Static &amp; Stardust · El Paso, TX</p>
-</main>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top"><img src="assets/logo-badge.png" alt=""><span>Static &amp; Stardust</span></a>
+    <button class="lang" id="langToggle" type="button" aria-label="Español" lang="es">ES</button>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <span class="hello" data-i18n="hero.hello">👋 Hi there, welcome in!</span>
+        <h1 data-i18n="hero.title">Little things with a<br><span class="grad">starry glow.</span></h1>
+        <p class="lede" data-i18n="hero.lede">Bookmarks, coasters and charm necklaces made with a soft spot for retro TV nights and big desert skies. Made with love in El Paso, Texas.</p>
+        <div class="btns">
+          <a class="btn btn-main" href="#find" data-i18n="hero.cta">Come say hi →</a>
+          <a class="btn btn-alt" href="#make" data-i18n="hero.make">See what we make</a>
+        </div>
+      </div>
+      <div class="badge-wrap"><img src="assets/logo-badge.png" alt="Static &amp; Stardust radio-tower sunset badge"></div>
+    </div>
+    <div class="stripes" aria-hidden="true"></div>
+
+    <section id="make">
+      <div class="tag" data-i18n="make.tag">What we make</div>
+      <h2 data-i18n="make.title">Small treats for your shelf, desk &amp; neck</h2>
+      <p class="sub" data-i18n="make.sub">Every piece is designed in-house and finished by hand — gifts you’ll actually want to keep for yourself.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="pic"><img src="assets/bookmarks-space-dino.jpg" alt="Space and dinosaur laminated bookmarks with tassels" loading="lazy"></div>
+          <h3 data-i18n="c1.t">Bookmarks</h3>
+          <p data-i18n="c1.p">Laminated, tasseled and full of character — for readers of every age.</p>
+        </article>
+        <article class="card">
+          <div class="pic coaster"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#fff" opacity=".85"/><circle cx="50" cy="50" r="30" fill="none" stroke="#8b6bff" stroke-width="4"/><circle cx="50" cy="50" r="14" fill="#ff5fb0"/></svg></div>
+          <h3 data-i18n="c2.t">Coasters</h3>
+          <p data-i18n="c2.p">Laser-cut retro-TV vibes with cork backs. Coming soon.</p>
+        </article>
+        <article class="card">
+          <div class="pic neck"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M20 20 Q50 80 80 20" fill="none" stroke="#27224d" stroke-width="3" stroke-linecap="round"/><path d="M50 62 l6 12 13 2 -10 9 3 13 -12 -7 -12 7 3 -13 -10 -9 13 -2z" fill="#ffb938"/></svg></div>
+          <h3 data-i18n="c3.t">Charm necklaces</h3>
+          <p data-i18n="c3.p">One little charm on a dainty chain, packed up ready to gift.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="story">
+        <div>
+          <div class="tag" data-i18n="story.tag">Our story</div>
+          <h2 data-i18n="story.title">Nostalgia, tuned to static</h2>
+          <p data-i18n="story.p1">Static &amp; Stardust is a tiny shop in El Paso. We love the glow of old TVs, midnight radio and wide-open night skies — and we turn that feeling into things you can hold.</p>
+          <p data-i18n="story.p2">Thanks for stopping by. Pull up a chair, stay a while.</p>
+        </div>
+        <div class="photos">
+          <img src="assets/bookmarks-polar-bear.jpg" alt="Polar bear laminated bookmarks" loading="lazy">
+          <img src="assets/bookmarks-space-dino.jpg" alt="Space and dinosaur bookmarks" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="find" id="find">
+      <div class="tag" data-i18n="find.tag">Find us</div>
+      <h2 data-i18n="find.title">Come say hi</h2>
+      <p class="sub" data-i18n="find.sub">Our shops are open now — and a brand-new home for Static &amp; Stardust is on the way.</p>
+      <div class="shops">
+        <a class="shop" href="https://www.etsy.com/shop/StaticandStardust" rel="noopener">Etsy<small data-i18n="find.etsy">Bookmarks &amp; necklaces</small></a>
+        <a class="shop" href="https://staticandstardust.myshopify.com" rel="noopener">Shopify<small data-i18n="find.shopify">Tees &amp; more</small></a>
+        <span class="shop soon">eBay<small data-i18n="find.ebay">Coming soon</small></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year">2026</span> Static &amp; Stardust · El Paso, TX</footer>
+</div>
 
 <script src="i18n.js"></script>
 <script>
 SASi18n({
-  'meta.title':'Static &amp; Stardust — Próximamente',
-  'meta.desc':'Static &amp; Stardust — nostalgia sintonizada en estática. Separadores de libros, posavasos y collares con dijes. Nuestro nuevo hogar llega pronto.',
-  'tag':'Nostalgia, sintonizada en estática.',
-  'soon':'Próximamente',
-  'find':'Encuéntranos en'
+  'meta.title':'Static &amp; Stardust — ¡Bienvenido!',
+  'meta.desc':'Bienvenido a Static &amp; Stardust — separadores de libros, posavasos y collares con dijes hechos a mano con un brillo nostálgico y estrellado. Hecho en El Paso, TX.',
+  'hero.hello':'👋 ¡Hola, bienvenido!',
+  'hero.title':'Cositas con un<br><span class="grad">brillo estrellado.</span>',
+  'hero.lede':'Separadores de libros, posavasos y collares con dijes hechos con cariño por las noches de tele retro y los cielos del desierto. Hecho con amor en El Paso, Texas.',
+  'hero.cta':'Ven a saludar →',
+  'hero.make':'Mira lo que hacemos',
+  'make.tag':'Lo que hacemos',
+  'make.title':'Pequeños detalles para tu estante, escritorio y cuello',
+  'make.sub':'Cada pieza se diseña aquí y se termina a mano — regalos que querrás quedarte para ti.',
+  'c1.t':'Separadores',
+  'c1.p':'Laminados, con borla y mucha personalidad — para lectores de todas las edades.',
+  'c2.t':'Posavasos',
+  'c2.p':'Cortados con láser, estilo tele retro, con base de corcho. Próximamente.',
+  'c3.t':'Collares con dije',
+  'c3.p':'Un dije con una cadena delicada, listo para regalar.',
+  'story.tag':'Nuestra historia',
+  'story.title':'Nostalgia, sintonizada en estática',
+  'story.p1':'Static &amp; Stardust es una tiendita en El Paso. Nos encanta el brillo de las teles viejas, la radio de medianoche y los cielos estrellados — y lo convertimos en cosas que puedes tener en la mano.',
+  'story.p2':'Gracias por pasar. Acércate una silla y quédate un rato.',
+  'find.tag':'Encuéntranos',
+  'find.title':'Ven a saludar',
+  'find.sub':'Nuestras tiendas ya están abiertas — y un nuevo hogar para Static &amp; Stardust viene en camino.',
+  'find.etsy':'Separadores y collares',
+  'find.shopify':'Camisetas y más',
+  'find.ebay':'Próximamente'
 });
 </script>
 </body>
