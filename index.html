@@ -13,15 +13,11 @@
 <meta property="og:image" content="https://staticandstardust.com/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="welcome.css">
 </head>
-<body>
+<body data-page="home">
 <div class="blobs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
+<div id="chrome-top"></div>
 <div class="wrap">
-  <header class="top">
-    <a class="brand" href="#top"><img src="assets/logo-badge.png" alt=""><span>Static &amp; Stardust</span></a>
-    <button class="lang" id="langToggle" type="button" aria-label="Español" lang="es">ES</button>
-  </header>
-
   <main id="top">
     <div class="hero">
       <div>
@@ -36,6 +32,19 @@
       <div class="badge-wrap"><img src="assets/logo-badge.png" alt="Static &amp; Stardust radio-tower sunset badge"></div>
     </div>
     <div class="stripes" aria-hidden="true"></div>
+
+    <section id="explore">
+      <div class="tag" data-i18n="ex.tag">Look around</div>
+      <h2 data-i18n="ex.title">Where to next?</h2>
+      <div class="boxes">
+        <a class="box feat" href="shop.html"><div class="ic i1">🛍️</div><h3 data-i18n="ex.shop.t">Shop</h3><p data-i18n="ex.shop.p">Browse everything we make on Etsy &amp; Shopify.</p><span class="go" data-i18n="ex.go">Open →</span></a>
+        <a class="box" href="about.html"><div class="ic i2">🌟</div><h3 data-i18n="ex.about.t">Our Story</h3><p data-i18n="ex.about.p">Who we are and why we love static &amp; stardust.</p><span class="go" data-i18n="ex.go">Open →</span></a>
+        <a class="box" href="info.html"><div class="ic i3">💡</div><h3 data-i18n="ex.info.t">Info &amp; FAQ</h3><p data-i18n="ex.info.p">Shipping, materials and answers to common questions.</p><span class="go" data-i18n="ex.go">Open →</span></a>
+        <a class="box" href="contact.html"><div class="ic i4">💌</div><h3 data-i18n="ex.contact.t">Contact</h3><p data-i18n="ex.contact.p">Questions or a custom idea? Say hello.</p><span class="go" data-i18n="ex.go">Open →</span></a>
+        <div class="box dim"><div class="ic i5">🖼️</div><h3 data-i18n="ex.gal.t">Gallery</h3><p data-i18n="ex.gal.p">Behind-the-scenes and new designs.</p><span class="go" data-i18n="ex.soon">Coming soon</span></div>
+        <div class="box dim"><div class="ic i6">🎁</div><h3 data-i18n="ex.cust.t">Custom orders</h3><p data-i18n="ex.cust.p">Made-for-you bookmarks and gifts.</p><span class="go" data-i18n="ex.soon">Coming soon</span></div>
+      </div>
+    </section>
 
     <section id="make">
       <div class="tag" data-i18n="make.tag">What we make</div>
@@ -86,13 +95,13 @@
       </div>
     </section>
   </main>
-
-  <footer>© <span id="year">2026</span> Static &amp; Stardust · El Paso, TX</footer>
 </div>
+<div id="chrome-bottom"></div>
 
+<script src="shared.js"></script>
 <script src="i18n.js"></script>
 <script>
-SASi18n({
+SASi18n(Object.assign({},SAS_SHARED_ES,{
   'meta.title':'Static &amp; Stardust — ¡Bienvenido!',
   'meta.desc':'Bienvenido a Static &amp; Stardust — separadores de libros, posavasos y collares con dijes hechos a mano con un brillo nostálgico y estrellado. Hecho en El Paso, TX.',
   'hero.hello':'👋 ¡Hola, bienvenido!',
@@ -118,8 +127,15 @@ SASi18n({
   'find.sub':'Nuestras tiendas ya están abiertas — y un nuevo hogar para Static &amp; Stardust viene en camino.',
   'find.etsy':'Separadores y collares',
   'find.shopify':'Camisetas y más',
-  'find.ebay':'Próximamente'
-});
+  'find.ebay':'Próximamente',
+  'ex.tag':'Echa un vistazo','ex.title':'¿A dónde vamos?','ex.go':'Abrir →','ex.soon':'Próximamente',
+  'ex.shop.t':'Tienda','ex.shop.p':'Mira todo lo que hacemos en Etsy y Shopify.',
+  'ex.about.t':'Nuestra historia','ex.about.p':'Quiénes somos y por qué amamos la estática y el polvo de estrellas.',
+  'ex.info.t':'Info y preguntas','ex.info.p':'Envíos, materiales y respuestas a preguntas comunes.',
+  'ex.contact.t':'Contacto','ex.contact.p':'¿Preguntas o una idea personalizada? Di hola.',
+  'ex.gal.t':'Galería','ex.gal.p':'Detrás de cámaras y diseños nuevos.',
+  'ex.cust.t':'Pedidos personalizados','ex.cust.p':'Separadores y regalos hechos para ti.'
+}));
 </script>
 </body>
 </html>
