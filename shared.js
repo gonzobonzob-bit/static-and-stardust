@@ -17,13 +17,13 @@
   '</header></div>';
   var bottom=
   '<a class="float-shop" href="shop.html" data-i18n="float.shop">🛍️ Shop</a>'+
-  '<footer><div class="wrap"><p><a href="shop.html" data-i18n="nav.shop">Shop</a> · <a href="about.html" data-i18n="nav.about">Our Story</a> · <a href="info.html" data-i18n="nav.info">Info</a> · <a href="contact.html" data-i18n="nav.contact">Contact</a></p>'+
+  '<footer><div class="wrap"><p class="tagline" data-i18n="fam.tagline">A family of creatives &amp; sellers</p><p><a href="shop.html" data-i18n="nav.shop">Shop</a> · <a href="about.html" data-i18n="nav.about">Our Story</a> · <a href="info.html" data-i18n="nav.info">Info</a> · <a href="contact.html" data-i18n="nav.contact">Contact</a></p>'+
   '<p>© <span id="year">2026</span> Static &amp; Stardust · El Paso, TX</p></div></footer>';
   var t=document.getElementById('chrome-top'), b=document.getElementById('chrome-bottom');
   if(t) t.innerHTML=top; if(b) b.innerHTML=bottom;
   window.SAS_SHARED_ES={
     'bar.msg':'🛍️ ¡Nuestra tienda está abierta!','bar.all':'Ver todo →',
     'nav.home':'Inicio','nav.about':'Nuestra historia','nav.info':'Info','nav.contact':'Contacto','nav.shop':'Tienda',
-    'float.shop':'🛍️ Tienda'
+    'float.shop':'🛍️ Tienda','fam.tagline':'Una familia de creativos y vendedores'
   };
 })();
