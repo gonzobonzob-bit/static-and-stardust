@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Shop — Static &amp; Stardust</title>
-<meta name="description" content="Shop Static &amp; Stardust bookmarks, coasters and charm necklaces on Etsy and Shopify.">
+<meta name="description" content="Shop Static &amp; Stardust retro tees, bookmarks and charm necklaces on Shopify and Etsy.">
 <meta name="theme-color" content="#2a2d4d">
 <link rel="icon" type="image/png" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -17,10 +17,18 @@
 <main>
 <div class="pagehead"><div class="tag" data-i18n="s.tag">Shop</div><h1 data-i18n="s.title">Pick a shop &amp; say hi 🛍️</h1><p class="sub" data-i18n="s.sub">Everything we make lives in our online shops. Pick your favorite place to browse.</p></div>
 <section style="padding-top:10px"><div class="shopgrid">
-<a class="bigshop main" href="https://staticandstardust.etsy.com" rel="noopener"><h3>Etsy</h3><p data-i18n="s.etsy">Our main shop — bookmarks, charm necklaces and more.</p><span class="btn btn-main" data-i18n="s.visit">Visit shop →</span></a>
-<a class="bigshop" href="https://staticandstardust.myshopify.com" rel="noopener"><h3>Shopify</h3><p data-i18n="s.shopify">Tees, pop-culture and meme merch.</p><span class="btn btn-alt" data-i18n="s.visit">Visit shop →</span></a>
+<a class="bigshop main" href="https://staticandstardust.myshopify.com" rel="noopener"><h3>Shopify 👕</h3><p data-i18n="s.shopify">Tees, pop-culture and meme merch.</p><span class="btn btn-main" data-i18n="s.visit">Visit shop →</span></a>
+<a class="bigshop main" href="https://staticandstardust.etsy.com" rel="noopener"><h3>Etsy 📚</h3><p data-i18n="s.etsy">Bookmarks, charm necklaces and more.</p><span class="btn btn-main" data-i18n="s.visit">Visit shop →</span></a>
 </div></section>
-<section><div class="tag" data-i18n="s.fav">Fan favorites</div><h2 data-i18n="s.favt">Fresh from the Etsy shop</h2>
+
+<section id="tees"><div class="headrow"><div><div class="tag" data-i18n="s.ttag">On Shopify</div><h2 data-i18n="s.ttitle">Retro tees 🛸</h2><p class="sub" data-i18n="s.tsub">Bigfoot, UFOs and desert-sunset stripes with a worn-in vintage look. Tap a shirt to pick your size and color.</p></div>
+<a class="btn btn-alt" href="https://staticandstardust.myshopify.com" rel="noopener" data-i18n="s.tall">Open the Shopify shop →</a></div>
+<div class="prods" data-products="tees"></div></section>
+
+<section id="necklaces"><div class="headrow"><div><div class="tag" data-i18n="s.ntag">On Etsy</div><h2 data-i18n="s.ntitle">Charm necklaces ✨</h2><p class="sub" data-i18n="s.nsub">One little charm on a dainty chain, in a moon and star gift bag. A few favorites below, with animal, nautical, celestial and holiday charms in the Etsy shop.</p></div>
+<a class="btn btn-alt" href="https://staticandstardust.etsy.com" rel="noopener" data-i18n="s.nall">Visit the Etsy shop →</a></div>
+<div class="prods" data-products="necklaces"></div></section>
+<section id="bookmarks"><div class="tag" data-i18n="s.fav">On Etsy</div><h2 data-i18n="s.favt">Illustrated bookmarks 📚</h2>
 <div class="minis">
 <a class="mini" href="https://www.etsy.com/listing/4602094153/space-and-dinosaur-bookmarks-single" rel="noopener"><img src="assets/bookmarks-space-dino.jpg" alt="Space and dinosaur bookmarks"><div data-i18n="s.p1">Space &amp; Dinosaur Bookmarks<small data-i18n="s.on">View on Etsy →</small></div></a>
 <a class="mini" href="https://www.etsy.com/listing/4602692568/polar-bear-themed-bookmarks-laminated" rel="noopener"><img src="assets/bookmarks-polar-bear.jpg" alt="Polar bear bookmarks"><div data-i18n="s.p2">Polar Bear Bookmarks<small data-i18n="s.on">View on Etsy →</small></div></a>
@@ -37,6 +45,7 @@
 </div>
 <div id="chrome-bottom"></div>
 <script src="shared.js"></script>
+<script src="products.js"></script>
 <script src="i18n.js"></script>
 <script>
 SASi18n(Object.assign({},SAS_SHARED_ES,{
@@ -44,13 +53,19 @@ SASi18n(Object.assign({},SAS_SHARED_ES,{
   's.tag':'Tienda',
   's.title':'Elige una tienda y saluda 🛍️',
   's.sub':'Todo lo que hacemos vive en nuestras tiendas en línea. Elige tu lugar favorito para explorar.',
-  's.etsy':'Nuestra tienda principal — separadores, collares con dije y más.',
+  's.etsy':'Separadores, collares con dije y más.',
+  's.ttag':'En Shopify','s.ttitle':'Camisetas retro 🛸',
+  's.tsub':'Bigfoot, ovnis y franjas de atardecer en el desierto con un look vintage desgastado. Toca una camiseta para elegir talla y color.',
+  's.tall':'Abrir la tienda de Shopify →',
+  's.ntag':'En Etsy','s.ntitle':'Collares con dije ✨',
+  's.nsub':'Un dije con una cadena delicada, en una bolsita de regalo con lunas y estrellas. Abajo hay algunos favoritos, y en la tienda de Etsy hay dijes de animales, náuticos, celestiales y navideños.',
+  's.nall':'Visitar la tienda de Etsy →',
   's.visit':'Visitar tienda →',
   's.shopify':'Camisetas, cultura pop y merch de memes.',
   's.soon':'Pronto',
   's.ebay':'Estamos preparando esta.',
-  's.fav':'Favoritos',
-  's.favt':'Recién salido de la tienda de Etsy',
+  's.fav':'En Etsy',
+  's.favt':'Separadores ilustrados 📚',
   's.p1':'Separadores de espacio y dinosaurios<small data-i18n="s.on">Ver en Etsy →</small>',
   's.p2':'Separadores de osos polares<small data-i18n="s.on">Ver en Etsy →</small>',
   's.on':'Ver en Etsy →',

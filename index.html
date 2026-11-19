@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Static &amp; Stardust — Welcome!</title>
-<meta name="description" data-i18n-content="meta.desc" content="Welcome to Static &amp; Stardust — handmade bookmarks, coasters and charm necklaces with a nostalgic, starry glow. Made in El Paso, TX.">
+<meta name="description" data-i18n-content="meta.desc" content="Welcome to Static &amp; Stardust — retro tees, bookmarks and charm necklaces with a nostalgic, starry glow. From El Paso, TX.">
 <meta name="theme-color" content="#2a2d4d">
 <link rel="icon" type="image/png" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:title" content="Static &amp; Stardust — Welcome!">
-<meta property="og:description" content="Bookmarks, coasters and charm necklaces with a nostalgic, starry glow.">
+<meta property="og:description" content="Retro tees, bookmarks and charm necklaces with a nostalgic, starry glow.">
 <meta property="og:image" content="https://staticandstardust.com/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="welcome.css">
 </head>
@@ -23,15 +23,45 @@
       <div>
         <span class="hello" data-i18n="hero.hello">👋 Hi there, welcome in!</span>
         <h1 data-i18n="hero.title">Little things with a<br><span class="grad">starry glow.</span></h1>
-        <p class="lede" data-i18n="hero.lede">Bookmarks, coasters and charm necklaces made with a soft spot for retro TV nights and big desert skies. Made with love in El Paso, Texas.</p>
+        <p class="lede" data-i18n="hero.lede">Retro tees, bookmarks and charm necklaces made with a soft spot for retro TV nights, desert legends and big starry skies. From our little corner of El Paso, Texas.</p>
         <div class="btns">
-          <a class="btn btn-main" href="#find" data-i18n="hero.cta">Come say hi →</a>
-          <a class="btn btn-alt" href="#make" data-i18n="hero.make">See what we make</a>
+          <a class="btn btn-main" href="#tees" data-i18n="hero.cta">Shop new tees →</a>
+          <a class="btn btn-alt" href="#necklaces" data-i18n="hero.make">See the necklaces</a>
         </div>
       </div>
-      <div class="badge-wrap"><img src="assets/logo-badge.png" alt="Static &amp; Stardust radio-tower sunset badge"></div>
+      <div class="hero-art">
+        <div class="badge-wrap"><img src="assets/logo-badge.png" alt="Static &amp; Stardust radio-tower sunset badge"></div>
+        <a class="polaroid p1" href="#tees"><img id="heroTee" alt="Retro UFO Believe tee" width="500" height="500"><span data-i18n="hero.p1">New tees</span></a>
+        <a class="polaroid p2" href="#necklaces"><img src="assets/necklace-saturn.jpg" alt="Blue Saturn charm necklace" width="640" height="800"><span data-i18n="hero.p2">Charm necklaces</span></a>
+      </div>
     </div>
+    <div class="perks"><span data-i18n="perk1">🌵 From El Paso, TX</span><span data-i18n="perk2">🛸 Retro tees, printed to order</span><span data-i18n="perk3">🌙 Necklaces in a gift bag</span><span data-i18n="perk4">📦 Ships within the US</span></div>
     <div class="stripes" aria-hidden="true"></div>
+
+    <section id="tees">
+      <div class="headrow">
+        <div>
+          <div class="tag" data-i18n="tees.tag">Fresh drop</div>
+          <h2 data-i18n="tees.title">New retro tees 🛸</h2>
+          <p class="sub" data-i18n="tees.sub">Bigfoot, UFOs and desert-sunset color, all with a worn-in vintage look. Tap any shirt to see sizes and colors.</p>
+        </div>
+        <a class="btn btn-alt" href="shop.html#tees" data-i18n="tees.all">See all tees →</a>
+      </div>
+      <div class="prods" data-products="tees" data-limit="8"></div>
+    </section>
+
+    <section id="necklaces">
+      <div class="headrow">
+        <div>
+          <div class="tag" data-i18n="neck.tag">Little gifts</div>
+          <h2 data-i18n="neck.title">Dainty charm necklaces ✨</h2>
+          <p class="sub" data-i18n="neck.sub">One little charm on a dainty chain, tucked into a moon and star gift bag. Here are a few favorites, with more charms in the Etsy shop.</p>
+        </div>
+        <a class="btn btn-alt" href="https://staticandstardust.etsy.com" rel="noopener" data-i18n="neck.all">Visit the Etsy shop →</a>
+      </div>
+      <div class="prods" data-products="necklaces"></div>
+      <div class="giftnote"><span class="em" aria-hidden="true">🎁</span><p data-i18n="neck.gift"><b>Stocking stuffer idea:</b> every necklace arrives ready to give, so it’s an easy little thank-you, party favor or holiday treat.</p></div>
+    </section>
 
     <section id="explore">
       <div class="tag" data-i18n="ex.tag">Look around</div>
@@ -41,15 +71,15 @@
         <a class="box" href="about.html"><div class="ic i2">🌟</div><h3 data-i18n="ex.about.t">Our Story</h3><p data-i18n="ex.about.p">Who we are and why we love static &amp; stardust.</p><span class="go" data-i18n="ex.go">Open →</span></a>
         <a class="box" href="info.html"><div class="ic i3">💡</div><h3 data-i18n="ex.info.t">Info &amp; FAQ</h3><p data-i18n="ex.info.p">Shipping, materials and answers to common questions.</p><span class="go" data-i18n="ex.go">Open →</span></a>
         <a class="box" href="contact.html"><div class="ic i4">💌</div><h3 data-i18n="ex.contact.t">Contact</h3><p data-i18n="ex.contact.p">Questions or a custom idea? Say hello.</p><span class="go" data-i18n="ex.go">Open →</span></a>
-        <div class="box dim"><div class="ic i5">🖼️</div><h3 data-i18n="ex.gal.t">Gallery</h3><p data-i18n="ex.gal.p">Behind-the-scenes and new designs.</p><span class="go" data-i18n="ex.soon">Coming soon</span></div>
-        <div class="box dim"><div class="ic i6">🎁</div><h3 data-i18n="ex.cust.t">Custom orders</h3><p data-i18n="ex.cust.p">Made-for-you bookmarks and gifts.</p><span class="go" data-i18n="ex.soon">Coming soon</span></div>
+        <a class="box" href="#tees"><div class="ic i5">👕</div><h3 data-i18n="ex.gal.t">New tees</h3><p data-i18n="ex.gal.p">Bigfoot, UFOs and retro sunsets, fresh in the Shopify shop.</p><span class="go" data-i18n="ex.go">Open →</span></a>
+        <a class="box" href="contact.html"><div class="ic i6">🎁</div><h3 data-i18n="ex.cust.t">Got an idea?</h3><p data-i18n="ex.cust.p">Dreaming up a custom bookmark or gift? Send us a note.</p><span class="go" data-i18n="ex.say">Say hello →</span></a>
       </div>
     </section>
 
     <section id="make">
       <div class="tag" data-i18n="make.tag">What we make</div>
       <h2 data-i18n="make.title">Small treats for your shelf, desk &amp; neck</h2>
-      <p class="sub" data-i18n="make.sub">Every piece is designed in-house and finished by hand — gifts you’ll actually want to keep for yourself.</p>
+      <p class="sub" data-i18n="make.sub">Bookmarks and necklaces are finished by hand, and our tees are printed to order. Gifts you’ll actually want to keep for yourself. Laser-cut coasters are on the way.</p>
       <div class="cards">
         <article class="card">
           <div class="pic"><img src="assets/bookmarks-space-dino.jpg" alt="Space and dinosaur laminated bookmarks" loading="lazy"></div>
@@ -57,12 +87,12 @@
           <p data-i18n="c1.p">Laminated and full of character — some with tassels — for readers of every age.</p>
         </article>
         <article class="card">
-          <div class="pic coaster"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#fff" opacity=".85"/><circle cx="50" cy="50" r="30" fill="none" stroke="#8b6bff" stroke-width="4"/><circle cx="50" cy="50" r="14" fill="#ff5fb0"/></svg></div>
-          <h3 data-i18n="c2.t">Coasters</h3>
-          <p data-i18n="c2.p">Laser-cut retro-TV vibes with cork backs. Coming soon.</p>
+          <div class="pic"><img src="https://cdn.shopify.com/s/files/1/0777/9188/7412/files/ninjapod_media_4377434_616502_51_FRONT.jpg?v=1794958257&amp;width=600" alt="Legends Were Born in 1982 Bigfoot tee" loading="lazy"></div>
+          <h3 data-i18n="c2.t">Retro tees</h3>
+          <p data-i18n="c2.p">Bigfoot, aliens and sunset stripes with a weathered vintage look.</p>
         </article>
         <article class="card">
-          <div class="pic neck"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M20 20 Q50 80 80 20" fill="none" stroke="#27224d" stroke-width="3" stroke-linecap="round"/><path d="M50 62 l6 12 13 2 -10 9 3 13 -12 -7 -12 7 3 -13 -10 -9 13 -2z" fill="#ffb938"/></svg></div>
+          <div class="pic"><img src="assets/necklace-rose.jpg" alt="Gold rose charm necklace" loading="lazy" style="object-position:50% 80%"></div>
           <h3 data-i18n="c3.t">Charm necklaces</h3>
           <p data-i18n="c3.p">One little charm on a dainty chain, packed up ready to gift.</p>
         </article>
@@ -79,7 +109,7 @@
         </div>
         <div class="photos">
           <img src="assets/bookmarks-polar-bear.jpg" alt="Polar bear laminated bookmarks" loading="lazy">
-          <img src="assets/bookmarks-space-dino.jpg" alt="Space and dinosaur bookmarks" loading="lazy">
+          <img src="assets/necklace-reindeer.jpg" alt="Gold reindeer charm necklace" loading="lazy">
         </div>
       </div>
     </section>
@@ -97,11 +127,11 @@
     <section class="find" id="find">
       <div class="tag" data-i18n="find.tag">Find us</div>
       <h2 data-i18n="find.title">Come say hi</h2>
-      <p class="sub" data-i18n="find.sub">Our shops are open now — and a brand-new home for Static &amp; Stardust is on the way.</p>
+      <p class="sub" data-i18n="find.sub">Our shops are open now. Pull up a chair and have a look around.</p>
       <div class="shops">
-        <a class="shop" href="https://staticandstardust.etsy.com" rel="noopener">Etsy<small data-i18n="find.etsy">Bookmarks &amp; necklaces</small></a>
         <a class="shop" href="https://staticandstardust.myshopify.com" rel="noopener">Shopify<small data-i18n="find.shopify">Tees &amp; more</small></a>
-        <span class="shop soon">eBay<small data-i18n="find.ebay">Coming soon</small></span>
+        <a class="shop" href="https://staticandstardust.etsy.com" rel="noopener">Etsy<small data-i18n="find.etsy">Bookmarks &amp; necklaces</small></a>
+        <a class="shop" href="contact.html">Email<small data-i18n="find.mail">info@staticandstardust.com</small></a>
       </div>
     </section>
   </main>
@@ -109,23 +139,33 @@
 <div id="chrome-bottom"></div>
 
 <script src="shared.js"></script>
+<script src="products.js"></script>
 <script src="i18n.js"></script>
 <script>
 SASi18n(Object.assign({},SAS_SHARED_ES,{
   'meta.title':'Static &amp; Stardust — ¡Bienvenido!',
-  'meta.desc':'Bienvenido a Static &amp; Stardust — separadores de libros, posavasos y collares con dijes hechos a mano con un brillo nostálgico y estrellado. Hecho en El Paso, TX.',
+  'meta.desc':'Bienvenido a Static &amp; Stardust — camisetas retro, separadores de libros y collares con dije con un brillo nostálgico y estrellado. Desde El Paso, TX.',
   'hero.hello':'👋 ¡Hola, bienvenido!',
   'hero.title':'Cositas con un<br><span class="grad">brillo estrellado.</span>',
-  'hero.lede':'Separadores de libros, posavasos y collares con dijes hechos con cariño por las noches de tele retro y los cielos del desierto. Hecho con amor en El Paso, Texas.',
-  'hero.cta':'Ven a saludar →',
-  'hero.make':'Mira lo que hacemos',
+  'hero.lede':'Camisetas retro, separadores de libros y collares con dije hechos con cariño por las noches de tele retro, las leyendas del desierto y los grandes cielos estrellados. Desde nuestro rinconcito de El Paso, Texas.',
+  'hero.cta':'Ver camisetas nuevas →',
+  'hero.make':'Ver los collares',
+  'hero.p1':'Camisetas nuevas','hero.p2':'Collares con dije',
+  'perk1':'🌵 Desde El Paso, TX','perk2':'🛸 Camisetas retro impresas bajo pedido','perk3':'🌙 Collares en bolsita de regalo','perk4':'📦 Enviamos dentro de EE. UU.',
+  'tees.tag':'Recién salidas','tees.title':'Camisetas retro nuevas 🛸',
+  'tees.sub':'Bigfoot, ovnis y colores de atardecer en el desierto, todo con un look vintage desgastado. Toca cualquier camiseta para ver tallas y colores.',
+  'tees.all':'Ver todas las camisetas →',
+  'neck.tag':'Pequeños regalos','neck.title':'Collares delicados con dije ✨',
+  'neck.sub':'Un dije con una cadena delicada, guardado en una bolsita de regalo con lunas y estrellas. Aquí tienes algunos favoritos, y hay más dijes en la tienda de Etsy.',
+  'neck.all':'Visitar la tienda de Etsy →',
+  'neck.gift':'<b>Idea para el calcetín navideño:</b> cada collar llega listo para regalar, así que es un detalle fácil para dar las gracias, para una fiesta o para las fiestas.',
   'make.tag':'Lo que hacemos',
   'make.title':'Pequeños detalles para tu estante, escritorio y cuello',
-  'make.sub':'Cada pieza se diseña aquí y se termina a mano — regalos que querrás quedarte para ti.',
+  'make.sub':'Los separadores y collares se terminan a mano, y nuestras camisetas se imprimen bajo pedido. Regalos que querrás quedarte para ti. Los posavasos cortados con láser vienen en camino.',
   'c1.t':'Separadores',
   'c1.p':'Laminados y llenos de personalidad — algunos con borla — para lectores de todas las edades.',
-  'c2.t':'Posavasos',
-  'c2.p':'Cortados con láser, estilo tele retro, con base de corcho. Próximamente.',
+  'c2.t':'Camisetas retro',
+  'c2.p':'Bigfoot, extraterrestres y franjas de atardecer con un look vintage desgastado.',
   'c3.t':'Collares con dije',
   'c3.p':'Un dije con una cadena delicada, listo para regalar.',
   'story.tag':'Nuestra historia',
@@ -134,17 +174,17 @@ SASi18n(Object.assign({},SAS_SHARED_ES,{
   'story.p2':'Desde El Paso, convertimos esos sueños en separadores, posavasos y collares con dije hechos para alegrarle el día a alguien.',
   'find.tag':'Encuéntranos',
   'find.title':'Ven a saludar',
-  'find.sub':'Nuestras tiendas ya están abiertas — y un nuevo hogar para Static &amp; Stardust viene en camino.',
+  'find.sub':'Nuestras tiendas ya están abiertas. Ponte cómodo y echa un vistazo.',
   'find.etsy':'Separadores y collares',
   'find.shopify':'Camisetas y más',
-  'find.ebay':'Próximamente',
+  'find.mail':'info@staticandstardust.com',
   'ex.tag':'Echa un vistazo','ex.title':'¿A dónde vamos?','ex.go':'Abrir →','ex.soon':'Próximamente',
   'ex.shop.t':'Tienda','ex.shop.p':'Mira todo lo que hacemos en Etsy y Shopify.',
   'ex.about.t':'Nuestra historia','ex.about.p':'Quiénes somos y por qué amamos la estática y el polvo de estrellas.',
   'ex.info.t':'Info y preguntas','ex.info.p':'Envíos, materiales y respuestas a preguntas comunes.',
   'ex.contact.t':'Contacto','ex.contact.p':'¿Preguntas o una idea personalizada? Di hola.',
-  'ex.gal.t':'Galería','ex.gal.p':'Detrás de cámaras y diseños nuevos.',
-  'ex.cust.t':'Pedidos personalizados','ex.cust.p':'Separadores y regalos hechos para ti.',
+  'ex.gal.t':'Camisetas nuevas','ex.gal.p':'Bigfoot, ovnis y atardeceres retro, recién llegados a la tienda de Shopify.',
+  'ex.cust.t':'¿Tienes una idea?','ex.cust.p':'¿Sueñas con un separador o regalo personalizado? Escríbenos.','ex.say':'Di hola →',
   'fam.tag':'La familia',
   'fam.title':'Una familia de creativos y vendedores',
   'fam.p':'Static & Stardust no es solo una tienda: somos una familia de creadores y vendedores. Entre todos encontrarás piezas hechas a mano, tesoros y hallazgos en Etsy, Shopify, eBay, Vinted y más.',
