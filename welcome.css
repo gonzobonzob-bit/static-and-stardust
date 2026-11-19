@@ -182,7 +182,7 @@ html{background:#2a2d4d}
 .polaroid span{position:absolute;left:0;right:0;bottom:5px}
 .polaroid.p1{left:0;bottom:4%;transform:rotate(-8deg)}
 .polaroid.p2{right:0;top:4%;transform:rotate(7deg)}
-.polaroid.p2 img{aspect-ratio:4/5}
+.polaroid.p2 img{aspect-ratio:4/5;object-position:50% 85%}
 .polaroid:hover{transform:rotate(0) scale(1.05);z-index:2}
 .perks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;padding:18px 0 4px;color:var(--soft);font-weight:700;font-size:15px}
 .perks span{white-space:nowrap}
