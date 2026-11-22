@@ -217,3 +217,7 @@ html{background:#2a2d4d}
 .xlink b{display:block;font-weight:800;font-size:17px}
 .xlink small{display:block;color:var(--soft);font-size:14px;line-height:1.5;margin-top:2px}
 .xlink .go{display:inline-block;margin-top:6px;font-weight:800;color:var(--amber);font-size:14px}
+.polaroid.p3{right:0;bottom:4%;transform:rotate(5deg)}
+.cards.two{grid-template-columns:repeat(2,1fr);max-width:760px}
+.cardgo{color:#d63f93;font-weight:800;margin-top:8px}
+@media (max-width:620px){.cards.two{grid-template-columns:1fr}}
