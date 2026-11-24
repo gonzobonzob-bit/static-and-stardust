@@ -23,6 +23,20 @@
     ['Retro Silhouette Bigfoot Tee','retro-silhouette-bigfoot-tee','ninjapod_media_4397390_617441_51_FRONT.jpg?v=1794977258']
   ];
 
+  var HOLIDAY = [
+    ['Merry Christmas Truck Tee','merry-christmas-truck-tee','ninjapod_media_4563524_626295_95_FRONT.jpg?v=1795315660'],
+    ['Gnomes Christmas Truck Tee','gnomes-christmas-truck-tee','ninjapod_media_4563979_626314_95_FRONT.jpg?v=1795315707'],
+    ['Howdy Christmas Tee','howdy-christmas-tee','ninjapod_media_4565065_626356_95_FRONT.jpg?v=1795315737'],
+    ['All Of The Otter Reindeer Tee','all-of-the-otter-reindeer-tee','ninjapod_media_4565818_626395_00_FRONT.jpg?v=1795315762'],
+    ['Is This Jolly Enough Christmas Cat Tee','is-this-jolly-enough-christmas-cat-tee','ninjapod_media_4566996_626444_95_FRONT.jpg?v=1795315794'],
+    ['Most Wonderful Time Tee','most-wonderful-time-tee','ninjapod_media_4563394_626284_00_FRONT.jpg?v=1795315624'],
+    ['Warm Holiday Wishes Tee','warm-holiday-wishes-tee','ninjapod_media_4567741_626162_00_FRONT.jpg?v=1795315473'],
+    ['Probably Jingle Tired Tee','probably-jingle-tired-tee','ninjapod_media_4562488_626243_00_FRONT.jpg?v=1795315584'],
+    ['Too Hot Ugly Sweater Tee','too-hot-ugly-sweater-tee','ninjapod_media_4561134_626182_00_FRONT.jpg?v=1795315520'],
+    ['Carpet All Wet Todd Tee','carpet-all-wet-todd-tee','ninjapod_media_4567680_626134_95_FRONT.jpg?v=1795315446'],
+    ['My Christmas Spirit Is Whisky Tee','my-christmas-spirit-is-whisky-tee','ninjapod_media_4559680_626044_51_FRONT.jpg?v=1795315401']
+  ];
+
   // [charm name, i18n key for the Spanish name, local photo]
   var NECKLACES = [
     ['Gold Rose','n.rose','assets/necklace-rose.jpg'],
@@ -47,8 +61,8 @@
   document.querySelectorAll('[data-products]').forEach(function(el){
     var kind = el.getAttribute('data-products');
     var limit = parseInt(el.getAttribute('data-limit'),10) || 999;
-    var list = kind === 'tees' ? TEES : NECKLACES;
-    el.innerHTML = list.slice(0,limit).map(kind === 'tees' ? tee : necklace).join('');
+    var list = kind === 'tees' ? TEES : kind === 'holiday' ? HOLIDAY : NECKLACES;
+    el.innerHTML = list.slice(0,limit).map(kind === 'necklaces' ? necklace : tee).join('');
   });
 
   // Hero collage pictures (Home page only)
