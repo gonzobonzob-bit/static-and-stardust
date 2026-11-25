@@ -37,6 +37,21 @@
     ['My Christmas Spirit Is Whisky Tee','my-christmas-spirit-is-whisky-tee','ninjapod_media_4559680_626044_51_FRONT.jpg?v=1795315401']
   ];
 
+  var NEWYEAR = [
+    ['Gold Bow New Year 2027','gold-bow-new-year-2027','ninjapod_media_4722663_634430_51_FRONT.jpg?v=1795565497'],
+    ['Gold Stars New Year 2027','gold-stars-new-year-2027','ninjapod_media_4723009_634464_51_FRONT.jpg?v=1795565918'],
+    ['Cheers To The New Year','cheers-to-the-new-year','ninjapod_media_4723748_634544_51_FRONT.jpg?v=1795567322'],
+    ['Champagne New Year 2027','champagne-new-year-2027','ninjapod_media_4724145_634576_51_FRONT.jpg?v=1795567755'],
+    ['Cowboy New Year 2027','cowboy-new-year-2027','ninjapod_media_4724510_634592_51_FRONT.jpg?v=1795568150'],
+    ['Same Hot Mess New Year','same-hot-mess-new-year','ninjapod_media_4724675_634603_51_FRONT.jpg?v=1795568447'],
+    ['Delightfully Chaotic New Year','delightfully-chaotic-new','ninjapod_media_4724932_634619_00_FRONT.jpg?v=1795568865'],
+    ['Fresh Goals Panic New Year','fresh-goals-panic-new-yea','ninjapod_media_4725440_634654_00_FRONT.jpg?v=1795569299'],
+    ['Never Sticks Resolutions','never-sticks-resolutions','ninjapod_media_4726034_634680_00_FRONT.jpg?v=1795570049'],
+    ['Raccoon New Year 2027','raccoon-new-year-2027','ninjapod_media_4728645_634853_00_FRONT.jpg?v=1795574388'],
+    ['Preppy New Year 2027','preppy-new-year-2027','ninjapod_media_4735730_635177_00_FRONT.jpg?v=1795584569'],
+    ['If 2027 Shows Up Early','if-2027-shows-up-early','ninjapod_media_4735974_635197_00_FRONT.jpg?v=1795584946']
+  ];
+
   // [charm name, i18n key for the Spanish name, local photo]
   var NECKLACES = [
     ['Gold Rose','n.rose','assets/necklace-rose.jpg'],
@@ -61,7 +76,7 @@
   document.querySelectorAll('[data-products]').forEach(function(el){
     var kind = el.getAttribute('data-products');
     var limit = parseInt(el.getAttribute('data-limit'),10) || 999;
-    var list = kind === 'tees' ? TEES : kind === 'holiday' ? HOLIDAY : NECKLACES;
+    var list = kind === 'tees' ? TEES : kind === 'holiday' ? HOLIDAY : kind === 'newyear' ? NEWYEAR : NECKLACES;
     el.innerHTML = list.slice(0,limit).map(kind === 'necklaces' ? necklace : tee).join('');
   });
 
