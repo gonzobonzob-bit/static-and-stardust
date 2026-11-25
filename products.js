@@ -9,32 +9,32 @@
 
   // [title, Shopify product handle, image file on the Shopify CDN]
   var TEES = [
-    ['Retro UFO Believe Tee','retro-ufo-believe-tee-1','ninjapod_media_4183699_609242_51_FRONT.jpg?v=1794701747'],
-    ['Legends Were Born in 1982 Bigfoot Tee','legends-were-born-in-1982-bigfoot-tee','ninjapod_media_4377434_616502_51_FRONT.jpg?v=1794958257'],
-    ['Ew, People Alien Tee','ew-people-alien-tee','ninjapod_media_4374476_616355_51_FRONT.jpg?v=1794953154'],
-    ['Just a Girl Who Loves Bigfoot Tee','just-a-girl-who-loves-bigfoot-tee','ninjapod_media_4377195_616490_51_FRONT.jpg?v=1794957979'],
-    ['Alien Cow Abduction Tee','alien-cow-abduction-tee','ninjapod_media_4373921_616330_51_FRONT.jpg?v=1794952516'],
-    ['Hide and Seek World Champ Bigfoot Tee','hide-and-seek-world-champ-bigfoot-tee','ninjapod_media_4376433_616475_51_FRONT.jpg?v=1794957486'],
-    ['Get In, Loser Alien Tee','get-in-loser-alien-tee','ninjapod_media_4375868_616445_51_FRONT.jpg?v=1794956743'],
-    ['Best Papa Squatch Ever Tee','best-papa-squatch-ever-tee','ninjapod_media_4396975_617408_51_FRONT.jpg?v=1794976526'],
-    ['Alien Faces Retro Panel Tee','alien-faces-retro-panel-tee','ninjapod_media_4374294_616348_51_FRONT.jpg?v=1794952997'],
-    ['Rabbit Abduction Tee','rabbit-abduction-tee','ninjapod_media_4376027_616452_51_FRONT.jpg?v=1794956963'],
-    ['Sunset Footprints Bigfoot Tee','papa-squatch-bigfoot-tee','ninjapod_media_4376337_616468_51_FRONT.jpg?v=1794957319'],
-    ['Retro Silhouette Bigfoot Tee','retro-silhouette-bigfoot-tee','ninjapod_media_4397390_617441_51_FRONT.jpg?v=1794977258']
+    ['Retro UFO Believe','retro-ufo-believe-tee-1','ninjapod_media_4183699_609242_51_FRONT.jpg?v=1794701747'],
+    ['Legends Were Born in 1982 Bigfoot','legends-were-born-in-1982-bigfoot-tee','ninjapod_media_4377434_616502_51_FRONT.jpg?v=1794958257'],
+    ['Ew, People Alien','ew-people-alien-tee','ninjapod_media_4374476_616355_51_FRONT.jpg?v=1794953154'],
+    ['Just a Girl Who Loves Bigfoot','just-a-girl-who-loves-bigfoot-tee','ninjapod_media_4377195_616490_51_FRONT.jpg?v=1794957979'],
+    ['Alien Cow Abduction','alien-cow-abduction-tee','ninjapod_media_4373921_616330_51_FRONT.jpg?v=1794952516'],
+    ['Hide and Seek World Champ Bigfoot','hide-and-seek-world-champ-bigfoot-tee','ninjapod_media_4376433_616475_51_FRONT.jpg?v=1794957486'],
+    ['Get In, Loser Alien','get-in-loser-alien-tee','ninjapod_media_4375868_616445_51_FRONT.jpg?v=1794956743'],
+    ['Best Papa Squatch Ever','best-papa-squatch-ever-tee','ninjapod_media_4396975_617408_51_FRONT.jpg?v=1794976526'],
+    ['Alien Faces Retro Panel','alien-faces-retro-panel-tee','ninjapod_media_4374294_616348_51_FRONT.jpg?v=1794952997'],
+    ['Rabbit Abduction','rabbit-abduction-tee','ninjapod_media_4376027_616452_51_FRONT.jpg?v=1794956963'],
+    ['Sunset Footprints Bigfoot','papa-squatch-bigfoot-tee','ninjapod_media_4376337_616468_51_FRONT.jpg?v=1794957319'],
+    ['Retro Silhouette Bigfoot','retro-silhouette-bigfoot-tee','ninjapod_media_4397390_617441_51_FRONT.jpg?v=1794977258']
   ];
 
   var HOLIDAY = [
-    ['Merry Christmas Truck Tee','merry-christmas-truck-tee','ninjapod_media_4563524_626295_95_FRONT.jpg?v=1795315660'],
-    ['Gnomes Christmas Truck Tee','gnomes-christmas-truck-tee','ninjapod_media_4563979_626314_95_FRONT.jpg?v=1795315707'],
-    ['Howdy Christmas Tee','howdy-christmas-tee','ninjapod_media_4565065_626356_95_FRONT.jpg?v=1795315737'],
-    ['All Of The Otter Reindeer Tee','all-of-the-otter-reindeer-tee','ninjapod_media_4565818_626395_00_FRONT.jpg?v=1795315762'],
-    ['Is This Jolly Enough Christmas Cat Tee','is-this-jolly-enough-christmas-cat-tee','ninjapod_media_4566996_626444_95_FRONT.jpg?v=1795315794'],
-    ['Most Wonderful Time Tee','most-wonderful-time-tee','ninjapod_media_4563394_626284_00_FRONT.jpg?v=1795315624'],
-    ['Warm Holiday Wishes Tee','warm-holiday-wishes-tee','ninjapod_media_4567741_626162_00_FRONT.jpg?v=1795315473'],
-    ['Probably Jingle Tired Tee','probably-jingle-tired-tee','ninjapod_media_4562488_626243_00_FRONT.jpg?v=1795315584'],
-    ['Too Hot Ugly Sweater Tee','too-hot-ugly-sweater-tee','ninjapod_media_4561134_626182_00_FRONT.jpg?v=1795315520'],
-    ['Carpet All Wet Todd Tee','carpet-all-wet-todd-tee','ninjapod_media_4567680_626134_95_FRONT.jpg?v=1795315446'],
-    ['My Christmas Spirit Is Whisky Tee','my-christmas-spirit-is-whisky-tee','ninjapod_media_4559680_626044_51_FRONT.jpg?v=1795315401']
+    ['Merry Christmas Truck','merry-christmas-truck-tee','ninjapod_media_4563524_626295_95_FRONT.jpg?v=1795315660'],
+    ['Gnomes Christmas Truck','gnomes-christmas-truck-tee','ninjapod_media_4563979_626314_95_FRONT.jpg?v=1795315707'],
+    ['Howdy Christmas','howdy-christmas-tee','ninjapod_media_4565065_626356_95_FRONT.jpg?v=1795315737'],
+    ['All Of The Otter Reindeer','all-of-the-otter-reindeer-tee','ninjapod_media_4565818_626395_00_FRONT.jpg?v=1795315762'],
+    ['Is This Jolly Enough Christmas Cat','is-this-jolly-enough-christmas-cat-tee','ninjapod_media_4566996_626444_95_FRONT.jpg?v=1795315794'],
+    ['Most Wonderful Time','most-wonderful-time-tee','ninjapod_media_4563394_626284_00_FRONT.jpg?v=1795315624'],
+    ['Warm Holiday Wishes','warm-holiday-wishes-tee','ninjapod_media_4567741_626162_00_FRONT.jpg?v=1795315473'],
+    ['Probably Jingle Tired','probably-jingle-tired-tee','ninjapod_media_4562488_626243_00_FRONT.jpg?v=1795315584'],
+    ['Too Hot Ugly Sweater','too-hot-ugly-sweater-tee','ninjapod_media_4561134_626182_00_FRONT.jpg?v=1795315520'],
+    ['Carpet All Wet Todd','carpet-all-wet-todd-tee','ninjapod_media_4567680_626134_95_FRONT.jpg?v=1795315446'],
+    ['My Christmas Spirit Is Whisky','my-christmas-spirit-is-whisky-tee','ninjapod_media_4559680_626044_51_FRONT.jpg?v=1795315401']
   ];
 
   var NEWYEAR = [
